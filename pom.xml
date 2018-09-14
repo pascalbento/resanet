@@ -46,6 +46,22 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>corp1</id>
+			<name>test Repository</name>
+			<url>http://nexus.vmcd76gedbdd01.bsfr.bs.fr.myatos.net/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<uniqueVersion>true</uniqueVersion>
+			<id>propSnap</id>
+			<name>test Snapshots</name>
+			<url>http://nexus.vmcd76gedbdd01.bsfr.bs.fr.myatos.net/repository/maven-snapshots/</url>
+			<layout>legacy</layout>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<build>
 		<pluginManagement>
 			<plugins>
